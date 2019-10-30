@@ -1,9 +1,9 @@
 ---
 tt_config_files:
-  - "elements/base.conf.j2"
-  - "elements/baremetal.conf.j2"
-  - "elements/centos.conf.j2"
-  - "elements/fixed-network.conf.j2"
+  - "{{ playbook_dir }}/elements/base.conf.j2"
+  - "{{ playbook_dir }}/elements/baremetal.conf.j2"
+  - "{{ playbook_dir }}/elements/centos.conf.j2"
+  - "{{ playbook_dir }}/elements/fixed-network.conf.j2"
 
 # base.conf.j2
 # NOTE(wszumski): networking on cirros image doesn't work
