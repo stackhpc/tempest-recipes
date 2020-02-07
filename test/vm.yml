@@ -17,5 +17,5 @@ base_free_form_extras: |-
   [service_available]
   cinder: "false"
 
-public_network_id: 9e59fc9e-61d7-4ebe-91ee-7c179a98a703
-floating_network_name: internet
+public_network_id: 13047566-bbf7-4e1d-941b-58e7b571ca8d
+floating_network_name: ilab-external-319
