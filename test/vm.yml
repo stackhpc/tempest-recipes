@@ -7,12 +7,6 @@ tt_config_files:
 
 tt_output_file: "{{ playbook_dir }}/../config/test/vm.conf"
 
-# general.v1.tiny
-flavor_ref: 2a769177-dd71-4d83-8aa7-d5fa9d1b8fdf
-
-# general.v1.small
-flavor_ref_alt: 402cd98e-37c8-468c-841f-43b42536ae83
-
 base_free_form_extras: |-
   [service_available]
   cinder: "false"
