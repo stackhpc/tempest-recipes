@@ -1,0 +1,11 @@
+---
+tt_config_files:
+  - "{{ playbook_dir }}/elements/base.conf.j2"
+  - "{{ playbook_dir }}/elements/vm.conf.j2"
+  - "{{ playbook_dir }}/elements/floating.conf.j2"
+  - "{{ playbook_dir }}/elements/openstack-version-train.conf.j2"
+
+tt_output_file: "{{ playbook_dir }}/../config/production/vm.conf"
+
+public_network_id: a929e8db-1bf4-4a5f-a80c-fabd39d06a26
+floating_network_name: internet
