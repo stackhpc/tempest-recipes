@@ -1,0 +1,19 @@
+---
+tt_config_files:
+  - "{{ playbook_dir }}/elements/base.conf.j2"
+  - "{{ playbook_dir }}/elements/vm.conf.j2"
+  - "{{ playbook_dir }}/elements/floating.conf.j2"
+  - "{{ playbook_dir }}/elements/ceph.conf.j2"
+  - "{{ playbook_dir }}/elements/volume.conf.j2"
+  - "{{ playbook_dir }}/elements/openstack-version-ussuri.conf.j2"
+  - "{{ playbook_dir }}/elements/overrides.conf.j2"
+
+overrides_free_form_extras: |
+  [volume]
+  build_timeout = 600
+  [volume-feature-enabled]
+  backup = False
+
+# floating.conf.j2
+public_network_id: 9948edde-640b-482b-a6bc-ad1466000d86
+floating_network_name: public
