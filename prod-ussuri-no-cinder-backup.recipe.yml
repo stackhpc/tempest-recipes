@@ -14,6 +14,8 @@ overrides_free_form_extras: |
   [volume-feature-enabled]
   backup = False
 
+tt_output_file: "{{ playbook_dir }}/../config/tempest.conf"
+
 # floating.conf.j2
 public_network_id: 9948edde-640b-482b-a6bc-ad1466000d86
 floating_network_name: public
