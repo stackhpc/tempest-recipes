@@ -18,4 +18,4 @@ tt_output_file: "{{ playbook_dir }}/../config/tempest.conf"
 
 # floating.conf.j2
 public_network_id: 80231a21-7546-4fd8-944f-e619de5a3850
-floating_network_name: public
+floating_network_name: external
