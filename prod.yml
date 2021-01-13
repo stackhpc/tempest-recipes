@@ -10,17 +10,12 @@ tt_config_files:
 
 overrides_free_form_extras: |
   [compute]
-  flavor_ref = f570697a-a99b-4688-8ad2-8bb1f8190d6e
-  flavor_ref_alt = 6c2c32d7-ab7a-40fd-918d-6b553d4d4f7e
-  [compute-feature-enabled]
-  resize = true
-  block_migration_for_live_migration = true
-  volume_backed_live_migration = true
+  flavor_ref = 614e7815-e006-40b9-a0e6-e7399d069cd8
+  flavor_ref_alt = f17c1bc0-d9dc-4756-ad91-80ad695059e4
   [identity-feature-enabled]
   domain_specific_drivers = true
   immutable_user_source = true
   [network-feature-enabled]
-  ipv6 = false
   api_extensions = address-scope,allowed-address-pairs,auto-allocated-topology,availability_zone,availability_zone_filter,default-subnetpools,dns-integration,empty-string-filtering,external-net,extra_dhcp_opt,extraroute,fip-port-details,flavors,ip-substring-filtering,router,ext-gw-mode,multi-provider,net-mtu,net-mtu-writable,network_availability_zone,network-ip-availability,pagination,port-mac-address-regenerate,binding,binding-extended,port-security,project-id,provider,quotas,quota_details,rbac-policies,rbac-address-scope,rbac-security-groups,rbac-subnetpool,revision-if-match,standard-attr-revisions,router_availability_zone,port-security-groups-filtering,security-group,service-type,sorting,standard-attr-description,stateful-security-group,subnet_onboard,subnet-service-types,subnet_allocation,subnetpool-prefix-ops,standard-attr-tag,standard-attr-timestamp
   port_security = true
   [service_available]
@@ -28,7 +23,6 @@ overrides_free_form_extras: |
   swift = false
   [volume-feature-enabled]
   backup = false
-  manage_volume = true
   
 
 tt_output_file: "{{ playbook_dir }}/../config/tempest.conf"
