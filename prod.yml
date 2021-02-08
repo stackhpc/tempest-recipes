@@ -28,5 +28,5 @@ overrides_free_form_extras: |
 tt_output_file: "{{ playbook_dir }}/../config/tempest.conf"
 
 # floating.conf.j2
-public_network_id: 361bff09-b12b-4400-96c8-c6b5e778f8c9
+public_network_id: addb7ab9-9732-4cd8-bbd6-bcf6825c4913
 floating_network_name: external
