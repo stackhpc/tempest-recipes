@@ -10,8 +10,8 @@ tt_config_files:
 
 overrides_free_form_extras: |
   [compute]
-  flavor_ref = 614e7815-e006-40b9-a0e6-e7399d069cd8
-  flavor_ref_alt = f17c1bc0-d9dc-4756-ad91-80ad695059e4
+  flavor_ref = 5008c755-e0bd-4f58-8dfe-eb23b0a02f66
+  flavor_ref_alt = 203c30eb-42c3-41cb-8a02-eece52a0e567
   [identity-feature-enabled]
   domain_specific_drivers = true
   immutable_user_source = true
