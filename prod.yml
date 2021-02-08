@@ -21,6 +21,8 @@ overrides_free_form_extras: |
   [service_available]
   neutron = true
   swift = false
+  [volume]
+  volume_size = 50
   [volume-feature-enabled]
   backup = false
   
