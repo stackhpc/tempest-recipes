@@ -1,0 +1,1 @@
+tempest.scenario.test_server_multinode.TestServerMultinode.test_schedule_to_all_nodes: separate gpu aggregate not supported

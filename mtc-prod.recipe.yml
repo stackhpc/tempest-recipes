@@ -1,0 +1,58 @@
+---
+tt_config_files:
+  - "{{ playbook_dir }}/elements/base.conf.j2"
+  - "{{ playbook_dir }}/elements/vm.conf.j2"
+  - "{{ playbook_dir }}/elements/floating.conf.j2"
+  - "{{ playbook_dir }}/elements/ceph.conf.j2"
+  - "{{ playbook_dir }}/elements/volume.conf.j2"
+  - "{{ playbook_dir }}/elements/openstack-version-ussuri.conf.j2"
+  - "{{ playbook_dir }}/elements/overrides.conf.j2"
+
+overrides_free_form_extras: |
+  [volume]
+  build_timeout = 900
+  [volume-feature-enabled]
+  backup = False
+  [openstack]
+  img_url = 'https://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img'
+  [default]
+  ca_certificates_file=/etc/ssl/certs/ca-certificates.crt
+  disable_ssl_certificate_validation = False
+  [validation]
+  ssh_key_type = ecdsa
+  [dashboard]
+  dashboard_url = https://horizon.the-dma.uk/
+  [compute-feature-enabled]
+  can_migrate_between_any_hosts = False
+
+
+# img_url = 'http://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img'
+# img_url = 'http://10.136.82.65:8080/cirros-0.3.5-x86_64-disk.img'
+
+
+#  [image]
+#  http_image = 'https://download.cirros-cloud.net/0.3.1/cirros-0.3.1-x86_64-uec.tar.gz'
+# 
+# [compute]
+# flavor_ref: 8755e570-300a-4842-af96-cdc0c95ff916 
+# flavor_ref_alt: 4a2c04df-8539-4b2a-a6d8-5b3761120d2d 
+
+
+
+#  [volume]
+#  volume_size = 21
+#  build_timeout = 600
+#  [volume-feature-enabled]
+#  backup = False
+#  [image]
+#  build_timeout = 900
+
+# flavor_ref: f75cb4a3-5005-4293-96fd-89df333e556c # 1c2m20d
+# flavor_ref_alt: f5e27ff8-ebc4-422a-a4f0-54df8faa96a7 # 2c4m80d
+# bigger image.build_timeout and volume_size is necessary if using bigger image
+
+tt_output_file: "{{ playbook_dir }}/../config/tempest.conf"
+
+# floating.conf.j2
+public_network_id: 69eb7cea-d907-43a2-82c1-8d617ae895e7
+floating_network_name: external
