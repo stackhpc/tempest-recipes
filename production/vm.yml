@@ -7,5 +7,5 @@ tt_config_files:
 
 tt_output_file: "{{ playbook_dir }}/../config/production/vm.conf"
 
-public_network_id: a929e8db-1bf4-4a5f-a80c-fabd39d06a26
-floating_network_name: internet
+public_network_id: CHANGE-ME-IN-VM.YML
+floating_network_name: CHANGE-ME-IN-VM.YML
