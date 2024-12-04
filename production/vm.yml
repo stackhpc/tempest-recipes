@@ -3,7 +3,7 @@ tt_config_files:
   - "{{ playbook_dir }}/elements/base.conf.j2"
   - "{{ playbook_dir }}/elements/vm.conf.j2"
   - "{{ playbook_dir }}/elements/floating.conf.j2"
-  - "{{ playbook_dir }}/elements/openstack-version-train.conf.j2"
+  - "{{ playbook_dir }}/elements/openstack-version-antelope.conf.j2"
 
 tt_output_file: "{{ playbook_dir }}/../config/production/vm.conf"
 
